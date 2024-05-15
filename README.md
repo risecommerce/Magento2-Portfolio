@@ -51,7 +51,6 @@ Using Composer
  php bin/magento cache:flush
 ```
 
-<h2>Configuration:</h2>
 <p>After installing the Portfolio extension, you can configure it through the Magento admin panel. The configuration is divided into two main sections: Portfolio Categories and Portfolio Items.</p>
 
 <h3>1. Portfolio Categories</h3>
