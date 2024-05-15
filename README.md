@@ -52,9 +52,6 @@ Using Composer
  php bin/magento cache:flush
 ```
 
- <h3>Configuration:</h3>
-<img width="830" height="430" src="https://risecommerce.com/media/wysiwyg/WhtsappConf.png">
-
 <h2>Configuration:</h2>
 <p>After installing the Portfolio extension, you can configure it through the Magento admin panel. The configuration is divided into two main sections: Portfolio Categories and Portfolio Items.</p>
 
