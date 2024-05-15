@@ -58,45 +58,46 @@ Using Composer
 <h3>1. Portfolio Categories</h3>
 <p>Portfolio Categories allow you to organize your portfolio items into different groups. This helps in managing and displaying the portfolio in a structured manner.</p>
 <img width="830" height="430" src="https://risecommerce.com/media/wysiwyg/categories.png">
-<h4>Steps to Configure Portfolio Categories:</h4>
 
-```
-Navigate to: Portfolio > Portfolio Categories.
-```
+<h3>Steps to Configure Portfolio Categories:</h3>
+
+<h2>Navigate to: Portfolio > Portfolio Categories.</h2>
 
 <h3>Add a New Category:</h3>
-<img width="830" height="430" src="https://risecommerce.com/media/wysiwyg/new-categories.png">
 <p>Click the Add New Category button.</p>
 <p>Enter the Category Name and other required details.</p>
 <p>Click Save Category.</p>
+<img width="830" height="430" src="https://risecommerce.com/media/wysiwyg/new-categories.png">
+
 
 <h3>Edit an Existing Category:</h3>
-<img width="830" height="430" src="https://risecommerce.com/media/wysiwyg/edit-categories.png">
 <p>Select a category from the list.</p>
 <p>Make the necessary changes.</p>
 <p>Click Save Category.</p>
+<img width="830" height="430" src="https://risecommerce.com/media/wysiwyg/edit-categories.png">
 
 
 
 <h3>2. Portfolio Items</h3>
 <p>Portfolio Items represent the individual items within your portfolio. Each item can be associated with one or more categories.</p>
 <img width="830" height="430" src="https://risecommerce.com/media/wysiwyg/items.png">
+
 <h3>Steps to Configure Portfolio Items:</h3>
-```
-Navigate to:  Portfolio > Portfolio Items.
-```
+
+<h2>Navigate to:  Portfolio > Portfolio Items.<h2>
 
 <h3>Add a New Portfolio Item:</h3>
-<img width="830" height="430" src="https://risecommerce.com/media/wysiwyg/new-items.png">
 <p>Click the Add New Item button.</p>
 <p>Enter the Item Name, Content, and other required details.</p>
 <p>Select the Categories to which this item belongs.</p>
 <p>Upload the Base Image or other media.</p>
 <p>Click Save Item.</p>
+<img width="830" height="430" src="https://risecommerce.com/media/wysiwyg/new-items.png">
+
 
 <h3>Edit an Existing Portfolio Item:</h3>
-<img width="830" height="430" src="https://risecommerce.com/media/wysiwyg/edit-items.png">
 <p>Select an item from the list.</p>
 <p>Make the necessary changes.</p>
 <p>Click Save Item.</p>
+<img width="830" height="430" src="https://risecommerce.com/media/wysiwyg/edit-items.png">
 
