@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
+
+    <table name="risecommerce_portfolio_category" resource="default" comment="Risecommerce Portfolio Category">
+        <column xsi:type="int" name="category_id" padding="10" unsigned="true" nullable="false" identity="true" comment="ID"/>
+        <column xsi:type="varchar" name="category_name" length="255" comment="Category Name"/>
+        <column xsi:type="varchar" name="identifier" nullable="true" length="255" comment="Identifier"/>
+        <column xsi:type="text" name="description"  comment=" Description"/>
+        <column xsi:type="varchar" name="category_discription" nullable="true" length="255" comment="Category Discription"/>
+        <column xsi:type="varchar" name="meta_discription" nullable="true" length="255" comment="Meta Discription"/>
+        <column xsi:type="varchar" name="meta_title" nullable="true" length="255" comment="Meta Title"/>
+        <column xsi:type="timestamp" name="created_at" nullable="false" default="CURRENT_TIMESTAMP" on_update="false" comment="Created At"/>
+        <column xsi:type="timestamp" name="updated_at" default="CURRENT_TIMESTAMP" on_update="true" nullable="false" comment="Updated At"/>
+        <constraint xsi:type="primary" referenceId="PRIMARY">
+            <column name="category_id"/>
+        </constraint>
+    </table>
+
+    <table name="risecommerce_portfolio_items" resource="default" comment="Risecommerce Portfolio Items">
+        <column xsi:type="int" name="portfolio_id" padding="10" unsigned="true" nullable="false" identity="true" comment="ID"/>
+        <column xsi:type="varchar" name="name" length="255" comment="Portfolio Name"/>
+        <column xsi:type="int" name="order_by" nullable="false" comment="Order Portfolio"/>
+        <column xsi:type="varchar" name="client" nullable="true" length="255" comment="Client"/>
+        <column xsi:type="varchar" name="identifier" nullable="true" length="255" comment="Identifier"/>
+        <column xsi:type="varchar" name="thumbnail_image" length="255" comment="Thumbnail Image"/>
+        <column xsi:type="varchar" name="base_image" nullable="true" length="255" comment="Base Image"/>
+        <column xsi:type="varchar" name="services" nullable="true" length="255" comment="Services"/>
+        <column xsi:type="varchar" name="skills" length="255" nullable="true" comment="Skills"/>
+        <column xsi:type="varchar" name="project_url" nullable="true" length="255" comment="Project Url"/>
+        <column xsi:type="text" name="description" comment="Description"/>
+        <column xsi:type="int" name="status" nullable="false" default='1'  comment="Is Active"/>    
+        <column xsi:type="timestamp" name="portfolio_date" nullable="true" comment="Portfolio Date"/>
+        <column xsi:type="timestamp" name="created_at" nullable="false" default="CURRENT_TIMESTAMP" on_update="false" comment="Created At"/>
+        <column xsi:type="timestamp" name="updated_at" default="CURRENT_TIMESTAMP" on_update="true" nullable="false" comment="Updated At"/>
+        <constraint xsi:type="primary" referenceId="PRIMARY">
+            <column name="portfolio_id"/>
+        </constraint>
+    </table>
+    
+    <table name="risecommerce_portfolio_category_items" resource="default" comment="Risecommerce Portfolio Category-Items">
+        <column xsi:type="int" name="entity_id" padding="10" unsigned="true" nullable="false" identity="true" comment="Entity ID"/>
+        <column xsi:type="int" name="category_id"  nullable="false" comment="Category ID"/>
+        <column xsi:type="int" name="portfolio_id" nullable="false" comment="Portfolio Id"/>
+        <constraint xsi:type="primary" referenceId="PRIMARY">
+            <column name="entity_id"/>
+        </constraint>
+    </table>
+</schema>

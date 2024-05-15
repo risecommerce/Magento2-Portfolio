@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<widgets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:portfolio:Magento_Widget:etc/widget.xsd">
+	<widget class="Risecommerce\Portfolio\Block\Widget\View" id="risecommerce_portfolio_view">
+		<label>Risecommerce::Portfolio</label>
+		<description>Index</description>
+		<parameters>
+			<parameter name="view" sort_order="10" visible="true" xsi:type="text">
+				<label>Risecommerce Portfolio</label>
+			</parameter>
+		</parameters>
+	</widget>
+</widgets>

@@ -1,0 +1,50 @@
+{
+    "risecommerce_portfolio_category": {
+        "column": {
+            "category_id": true,
+            "category_name": true,
+            "identifier": true,
+            "created_at": true,
+            "updated_at": true,
+            "category_discription": true,
+            "meta_discription": true,
+            "meta_title": true,
+            "description": true
+        },
+        "constraint": {
+            "PRIMARY": true
+        }
+    },
+    "risecommerce_portfolio_items": {
+        "column": {
+            "portfolio_id": true,
+            "name": true,
+            "client": true,
+            "identifier": true,
+            "thumbnail_image": true,
+            "base_image": true,
+            "services": true,
+            "skills": true,
+            "project_url": true,
+            "description": true,
+            "status": true,
+            "portfolio_date": true,
+            "created_at": true,
+            "updated_at": true,
+            "order_by": true
+        },
+        "constraint": {
+            "PRIMARY": true
+        }
+    },
+    "risecommerce_portfolio_category_items": {
+        "column": {
+            "entity_id": true,
+            "category_id": true,
+            "portfolio_id": true
+        },
+        "constraint": {
+            "PRIMARY": true
+        }
+    }
+}

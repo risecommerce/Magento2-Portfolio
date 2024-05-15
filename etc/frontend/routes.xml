@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * * @copyright Copyright (c) 2017-2021 Risecommerce IT Solutions Pvt Ltd. All rights reserved.
+ 
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:App/etc/routes.xsd">
+    <router id="standard">
+        <route id="portfolio" frontName="portfolio">
+            <module name="Risecommerce_Portfolio" />
+        </route>
+    </router>
+</config>

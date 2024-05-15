@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * * @copyright Copyright (c) 2017-2021 Risecommerce IT Solutions Pvt Ltd. All rights reserved.
+ 
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/module.xsd">
+    <module name="Risecommerce_Portfolio" setup_version="1.0.0" active="true"/>
+</config>

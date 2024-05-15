@@ -1,0 +1,27 @@
+<?php $menu = $this->getMenu() ?>
+<?php $baseUrl = $block->getBaseUrl(); ?>
+<div class="portfolio-header">
+
+    <div class="page-main">  
+        <div class="portfolio-container1">
+
+            <div class="portfolio-col1  col-md-6 ">
+                <div class="page-title-wrapper "><h1 class="page-title "><span class="base xhighlight" data-ui-id="page-title-wrapper">
+                    <?php echo  $block->getLayout()->getBlock('page.main.title')->getPageTitle() ?></span></h1>
+                    <?php foreach ($menu as $_menu) : ?>
+                        <?php if ($_menu->getId() == $this->getRequest()->getParam('id')) : ?>
+                            <p><?php echo $_menu->getDescription() ?> </p>
+                        <?php endif ?>
+                    <?php endforeach; ?>
+                    <?php if($this->getRequest()->getParam('id') == ""): ?>
+                        <p>Our Creative Design and Development Portfolio - Magento, Shopify, WooCommerce, Custom Web Apps showcase</p>
+                    <?php endif ?>
+                </div>
+            </div>
+  
+            <div class="portfolio-col2  col-md-6 ">
+                <img src="<?= $this->getViewFileUrl('Risecommerce_Portfolio::images/magento-web-development-portfolio-risecommerce.png') ?>" />
+            </div>
+        </div>
+    </div>   
+ </div>     

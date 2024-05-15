@@ -1,0 +1,112 @@
+<?php $portfolios = $this->getPortfolios() ?>
+
+<?php if (count($portfolios) > 0) : ?>
+	<?php $helper = $this->helper('Risecommerce\Portfolio\Helper\Data') ?>
+	<div class="portfolio-container">
+	<?php foreach ($portfolios as $portfolio) : ?>
+
+		<div class="grid-box">
+		<div href="#" data-modal-id="header-modal-<?php echo $portfolio->getId(); ?>" class="click-header">
+			<div class="portfolio-top-content">
+				<?php $thumbnailUrl = $this->getThumbnailSrc($portfolio) ?>
+				<?php $portfolioUrl = $this->getPortfolioAddress($portfolio) ?>
+				<?php if ($thumbnailUrl) : ?>
+					<img class="img-responsive lazy lazyImg" src="<?php  echo $block->getBaseUrl()."media/mgs/portfolio/thumbnail".$portfolio->getThumbnailImage(); ?>"  />
+				<?php endif ?>
+				<div class="hover-info">
+					
+					<span class="project"><?php echo $portfolio->getServices() ?></span>
+					<span class="categories"><?php echo $this->getCategoriesText($portfolio) ?></span>
+				</div>
+			</div>
+				</div>
+		</div>
+	<?php endforeach ?>
+	</div>
+	<?php foreach ($portfolios as $portfolio) : ?>
+
+		<div id="header-modal-<?php echo $portfolio->getId(); ?>" style="display:none;">
+			<div class="modal-body-content">
+				<div class="visit-site">
+					<?php $services = $portfolio->getServices() ?>
+					<?php if ($services != '') : ?>
+					<a href="<?php echo $portfolio->getProjectUrl() ?>" class="vsurl" target="_blank">Visit Site</a>
+					<?php endif ?>
+				</div>
+				<?php $thumbnailUrl = $this->getThumbnailSrc($portfolio) ?>
+				<?php $portfolioUrl = $this->getPortfolioAddress($portfolio) ?>
+				<?php if ($thumbnailUrl) : ?> 
+					
+					<img src="<?php echo $block->getBaseUrl()."media/mgs/portfolio/thumbnail".$portfolio->getThumbnailImage(); ?>" alt="" class="lazy img-responsive" />
+				<?php endif ?><div class="portfolio-content">
+					<h3 class="p-title"><?php echo $portfolio->getName(); ?></h3>
+					<div class="description">
+						<?php echo nl2br($portfolio->getDescription()) ?>
+					</div>
+					<table class="table portfolio-table">
+						<tbody>
+							<?php $date = $portfolio->getPortfolioDate() ?>
+							<?php if ($date != '') : ?>
+								<tr>
+									<td><?php echo __('Date:') ?></td>
+									<td><?php echo date('F d, Y', strtotime($date)) ?></td>
+								</tr>
+							<?php endif ?>
+
+							<?php $service = $portfolio->getServices() ?>
+							<?php if ($service != '') : ?>
+								<tr>
+									<td><?php echo __('Project:') ?></td>
+									<td><a class="project-url" href="<?php echo $portfolio->getProjectUrl() ?>" data-project-url="<?php echo $portfolio->getProjectUrl() ?>" target="_blank"><?php echo $service ?></a></td>
+								</tr>
+							<?php endif ?>
+
+							<?php $client = $portfolio->getClient() ?>
+							<?php if ($client != '') : ?>
+								<tr>
+									<td><?php echo __('Client:') ?></td>
+									<td><?php echo $client ?></td>
+								</tr>
+							<?php endif ?>
+
+							<?php $skills = $portfolio->getSkills() ?>
+							<?php if ($skills != '') : ?>
+								<tr>
+									<td><?php echo __('Skills:') ?></td>
+									<td><?php echo $skills ?></td>
+								</tr>
+							<?php endif ?>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	<?php endforeach ?>
+<?php else : ?>
+	<p class="note-msg"><?= 'There are no portfolios matching the selection.' ?></p>
+<?php endif ?>
+<script data-breeze>
+	require(
+		[
+			'jquery', 
+			'Magento_Ui/js/modal/modal'
+		],
+		function(
+			$,
+			modal
+		) {
+			var options = {
+				type: 'popup',
+				responsive: true,
+				innerScroll: true,
+				buttons: []
+			};
+			$(".click-header").on('click', function() {
+				var modalId = $(this).attr('data-modal-id');
+				var popup = modal(options, $('#' + modalId));
+				$('#' + modalId).modal("openModal");
+				var projectUrl = $("#" + modalId +" .project-url").attr('data-project-url');		
+			});
+		}
+	);
+</script>

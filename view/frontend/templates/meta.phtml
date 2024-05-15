@@ -1,0 +1,8 @@
+<?php $menu = $this->getMenu() ?>
+<?php $baseUrl = $block->getBaseUrl(); ?>
+<?php foreach ($menu as $_menu) : ?>
+    <?php if ($_menu->getId() == $this->getRequest()->getParam('id')) : ?>
+        <meta name="description" content="<?php echo $_menu->getMetaDiscription() ?>" />
+    <?php endif ?>
+<?php endforeach; ?>
+<meta name="author" content="Susheel Gupta">

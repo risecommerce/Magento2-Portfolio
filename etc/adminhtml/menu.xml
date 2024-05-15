@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * * @copyright Copyright (c) 2017-2021 Risecommerce IT Solutions Pvt Ltd. All rights reserved.
+ 
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Risecommerce_Portfolio::portfolio" title="Portfolio" module="Risecommerce_Portfolio" sortOrder="50" resource="Risecommerce_Portfolio::portfolio"/>
+        <add id="Risecommerce_Portfolio::portfolio_category" title="Portfolio Categories" module="Risecommerce_Portfolio" sortOrder="10" parent="Risecommerce_Portfolio::portfolio" action="adminhtml/portfolio/category" resource="Risecommerce_Portfolio::portfolio_category"/>
+        <add id="Risecommerce_Portfolio::portfolio_items" title="Portfolio Items" module="Risecommerce_Portfolio" sortOrder="20" parent="Risecommerce_Portfolio::portfolio" action="adminhtml/portfolio" resource="Risecommerce_Portfolio::portfolio_items"/>
+    </menu>
+</config>

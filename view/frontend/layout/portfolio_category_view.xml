@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * * @copyright Copyright (c) 2017-2021 Risecommerce IT Solutions Pvt Ltd. All rights reserved.
+ 
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd" layout="1column">
+	<head>
+		<css src="Risecommerce_Portfolio::css/owl.carousel.css"/>
+		<css src="Risecommerce_Portfolio::css/owl.theme.min.css"/>
+		<css src="Risecommerce_Portfolio::css/portfolio.css"/>
+	</head>
+	<body>
+		<referenceBlock name="head.additional">
+			<block class="Risecommerce\Portfolio\Block\Category" name="meta.tag" template="meta.phtml" after="-"/>
+		</referenceBlock>
+		<referenceContainer name="content">
+			<block class="Risecommerce\Portfolio\Block\Category" name="portfolio.menu" template="Risecommerce_Portfolio::menu.phtml" />
+			<block class="Risecommerce\Portfolio\Block\Category" name="portfolio.list" template="Risecommerce_Portfolio::list.phtml"/>
+		</referenceContainer>
+		<referenceContainer name="page.top">
+			<block class="Risecommerce\Portfolio\Block\Category" name="portfolio.header.bg" template="Risecommerce_Portfolio::ptopbar.phtml" before="-"/>
+
+		</referenceContainer>
+
+
+		<move element="page.main.title" destination="portfolio.header.bg" before="-"/>
+
+		<referenceBlock name="catalog.compare.sidebar" remove="true"/>
+		<referenceBlock name="cart_sidebar" remove="true"/>
+		<referenceBlock name="wishlist_sidebar" remove="true"/>
+		<referenceBlock name="sale.reorder.sidebar" remove="true"/>
+		<referenceBlock name="right.permanent.callout" remove="true"/>
+		<referenceBlock name="right.reports.product.compared" remove="true"/>
+		<referenceBlock name="right.reports.product.viewed" remove="true"/>
+		<referenceBlock name="div.sidebar.additional" remove="true"/>
+	</body>
+</page>
