@@ -11,7 +11,6 @@ Magento 2 Portfolio gallery with category filter have user-friendly interface to
  <a target="_blank" href="https://demo.risecommerce.com/"> <img width="190" height="70" src="https://risecommerce.com/media/wysiwyg/frontend-demo.png"> </a>
  <a target="_blank" href="https://demo.risecommerce.com/admindemo"> <img width="190" height="70" src="https://risecommerce.com/media/wysiwyg/Backend-Demo.png"> </a>
 
-Username: ```whatsapp_user``` Password: ```Test@123```
 
 ##Support: 
 version - 2.3.*,2.4.*
