@@ -1,14 +1,13 @@
 <h3><a target="_blank" href="https://risecommerce.com/">RiseCommerce (Risecore Technologies Pvt. Ltd.)</a></h3>
 <a target="_blank" href="https://risecommerce.com/"><img width="100%" height="208" src="https://risecommerce.com/media/wysiwyg/logowithtext.png"></a>
 
-## Portfolio Extension
+## Risecommerce Magento 2 Portfolio Extension
 
 <a href="https://risecommerce.com/portfolio"><img width="190" height="70" src="https://risecommerce.com/media/wysiwyg/risedownload.png"></a>
 
+[Magento 2 Image Gallery / Portfolio Extension](https://risecommerce.com/magento-2-portfolio-adobe-photo-gallery-extension.html) with category filter have user-friendly interface to Showcase portfolio, images, video, gallery.
 
-Magento 2 Portfolio gallery with category filter have user-friendly interface to Showcase portfolio, images, video, gallery.
-
-For more details about this extension, visit the [Risecommerce Portfolio](https://risecommerce.com/portfolio).
+For more details about this extension, visit the [Magento 2 Image Gallery / Portfolio Extension](https://risecommerce.com/magento-2-portfolio-adobe-photo-gallery-extension.html).
 
 If you're looking to enhance your Magento store further, consider hiring a [dedicated Magento developer](https://risecommerce.com/hire-dedicated-magento-developer.html).
 
